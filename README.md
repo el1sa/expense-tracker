@@ -9,6 +9,7 @@ With Expense Tracker App user can capture and track the expenses from four diffe
 
 * [React Native](https://reactnative.dev/)
 * [Expo](https://expo.dev/) 
+* [React Navigation](https://reactnavigation.org/) - library for implementing navigation between screens.
 * [SQLite](https://www.sqlite.org/docs.html) - library that implements SQL database engine, used for data (expenses) storing. 
 * [React Native Elements](https://reactnativeelements.com/) - component library used for UI design.
 * [VictoryPie](https://formidable.com/open-source/victory/docs/victory-pie) - component used for data visualization, renders a dataset as a pie chart.
