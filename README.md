@@ -2,7 +2,7 @@
 ## About The Project
 This project was designed and created for the course Mobiiliohjelmointi. It acts as a learning experience about mobile development technologies.
 
-With Expense Tracker App user can capture and track the expenses from four different categories. In addition, through data visualization, the user gets to see how their total expenses are built on a monthly basis.
+With Expense Tracker App user can capture and track the expenses from four different categories. In addition, through data visualization the user gets to see how their total expenses are built on a monthly basis.
 
 ## Technologies and components
 **Built with**
