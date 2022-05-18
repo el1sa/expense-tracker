@@ -42,18 +42,11 @@ export default function RestaurantBarScreen({ route, navigation }) {
         return date.toISOString().startsWith(dateStr);
     }
 
-    // console.log(dateIsValid('2022-01-24')); // true
-    // console.log(dateIsValid('2022-01-35')); // false
-    // console.log(dateIsValid('hello')); // false
-
-
     const checkTextInput = () => {
-        //Check for the Title TextInput
         if (!title.trim()) {
             alert('Please enter vendor');
             return;
         }
-        //Check for the Amount TextInput not empty and contains numbers
         if (!amount.trim()) {
             alert('Please enter correct amount (00.00)');
             return;
@@ -147,7 +140,6 @@ export default function RestaurantBarScreen({ route, navigation }) {
     return (
         <View style={styles.categoryStyles.container}>
             <View>
-                {/* <Text style={{ fontSize: 18, marginTop: 20 }}>Groceries</Text> */}
                 <View style={styles.categoryStyles.inputView}>
                     <Input placeholder='Restaurant/Bar name'
                         style={styles.categoryStyles.input}
@@ -217,7 +209,3 @@ export default function RestaurantBarScreen({ route, navigation }) {
     );
 
 }
-
-{/* <View style={{ alignItems: 'center' }}>
-    <Button onPress={() => navigation.navigate('Total Expenses', { groceryTotal })} buttonStyle={styles.categoryStyles.buttonStyle} title="Total expenses" />
-</View> */}

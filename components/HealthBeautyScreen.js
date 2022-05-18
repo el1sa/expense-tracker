@@ -42,18 +42,12 @@ export default function GroceryScreen({ route, navigation }) {
         return date.toISOString().startsWith(dateStr);
     }
 
-    // console.log(dateIsValid('2022-01-24')); // true
-    // console.log(dateIsValid('2022-01-35')); // false
-    // console.log(dateIsValid('hello')); // false
-
 
     const checkTextInput = () => {
-        //Check for the Title TextInput
         if (!title.trim()) {
             alert('Please enter vendor');
             return;
         }
-        //Check for the Amount TextInput not empty and contains numbers
         if (!amount.trim()) {
             alert('Please enter correct amount (00.00)');
             return;
@@ -136,7 +130,6 @@ export default function GroceryScreen({ route, navigation }) {
                     <ListItem.Title style={styles.categoryStyles.title}>{item.title}</ListItem.Title>
                     <ListItem.Subtitle style={styles.categoryStyles.subtitle}>{item.amounts.toFixed(2)}€</ListItem.Subtitle>
                     <ListItem.Subtitle style={styles.categoryStyles.subtitle}>{item.entrydate}</ListItem.Subtitle>
-
                 </View>
                 <Icon type="material" color="#39aea9" name="delete" size={33} onPress={() => deleteItem(item.id)} />
             </ListItem.Content>
@@ -147,7 +140,6 @@ export default function GroceryScreen({ route, navigation }) {
     return (
         <View style={styles.categoryStyles.container}>
             <View>
-                {/* <Text style={{ fontSize: 18, marginTop: 20 }}>Groceries</Text> */}
                 <View style={styles.categoryStyles.inputView}>
                     <Input placeholder='Vendor'
                         style={styles.categoryStyles.input}
@@ -171,8 +163,6 @@ export default function GroceryScreen({ route, navigation }) {
                             style={styles.categoryStyles.input}
                             onChangeText={(entrydate) => setEntryDate(entrydate)}
                             value={entrydate} />
-
-
 
                         {show && (
                             <DateTimePicker
@@ -217,7 +207,3 @@ export default function GroceryScreen({ route, navigation }) {
     );
 
 }
-
-{/* <View style={{ alignItems: 'center' }}>
-    <Button onPress={() => navigation.navigate('Total Expenses', { groceryTotal })} buttonStyle={styles.categoryStyles.buttonStyle} title="Total expenses" />
-</View> */}

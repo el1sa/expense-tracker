@@ -147,7 +147,6 @@ export default function GroceryScreen({ route, navigation }) {
     return (
         <View style={styles.categoryStyles.container}>
             <View>
-                {/* <Text style={{ fontSize: 18, marginTop: 20 }}>Groceries</Text> */}
                 <View style={styles.categoryStyles.inputView}>
                     <Input placeholder='Store name'
                         style={styles.categoryStyles.input}
@@ -160,7 +159,6 @@ export default function GroceryScreen({ route, navigation }) {
                         value={amount} />
 
                     <View style={{ flexDirection: 'row' }}>
-
                         <Pressable style={{
                             backgroundColor: '#39aea9', height: 40, marginLeft: 10, width: 150, alignItems: 'center', justifyContent: 'center', borderRadius: 5
                         }} onPress={() => showMode('date')}>
